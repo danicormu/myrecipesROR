@@ -3,7 +3,7 @@ require 'test_helper'
 class RecipeTest < ActiveSupport::TestCase
 
     def detup 
-        @chef = Chef.new(chefname: "Daniel", email: "danicormu@gmail.com")
+        @chef = Chef.create(chefname: "Daniel", email: "danicormu@gmail.com")
         @recipe = @chef.recipes.build(name: "chicken parm", summary: "This is the best chicken parm recipe ever",
                     description: "heat oil, add onion, chicken, cook for 30 min")
         

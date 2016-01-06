@@ -58,4 +58,5 @@ class ChefTest < ActiveSupport::TestCase
             assert_not @chef.valid?, '#{ia.inspect} should be invalid'
         end   
     end
+    
 end
