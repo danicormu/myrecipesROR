@@ -7,5 +7,7 @@ class Chef < ActiveRecord::Base
     validates :email, presence: true, length: { minimum: 105 },
                                       uniqueness: { case_sensitive: false },
                                       format: { with: VALID_EMAIL_REGEX }
+                                      
+    has_secure_password 
                             
 end
